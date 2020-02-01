@@ -1,9 +1,71 @@
 body {
   font-family: sans-serif;
+  color: #333333;
+  font-size: 14px;
+  font-weight: 400;
 }
 
 .container {
   width: 1170px;
   margin: auto;
+}
+
+.button {
+  border: none;
+  border-radius: 10px;
+  background-color: #ffd200;
+}
+
+.navbar {
+  padding: 8px 0;
+}
+
+.navbar-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar__contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: right;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar__tell {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-right: 30px;
+}
+
+.navbar__tell a {
+  text-decoration: none;
+  color: #333333;
+  font-size: 20px;
+}
+
+.navbar__address {
+  font-size: 13px;
+  margin-bottom: 8px;
+}
+
+.navbar__button {
+  padding: 18px 30px;
+  font-size: 13px;
 }
 /*# sourceMappingURL=style.css.map */
