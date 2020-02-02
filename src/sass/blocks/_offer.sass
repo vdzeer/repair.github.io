@@ -1,0 +1,98 @@
+.offer
+    position: relative
+    background: url('../img/offer/offer-bg.png') no-repeat
+    background-size: contain
+    background-position: center right
+    &::before
+        content: ''
+        position: absolute
+        background: #fff
+        height: 100%
+        width: 50%
+        left: 0
+        top: 0
+    &-block
+        position: relative
+        width: 50%
+        padding-right: 90px
+    &__title
+        line-height: 35px
+        font-size: 24px
+        max-width: 350px
+        +bold
+    &__subtitle
+        display: block
+        max-width: 235px
+        font-size: 16px
+        margin-top: 24px
+        margin-bottom: 30px
+    &__form
+        max-width: 495px
+    &__input
+        border-radius: 10px
+        border: 1px solid $input-border
+        padding: 20px 26px
+        min-width: 240px
+        margin-bottom: 30px
+        font-size: 15px
+        &:first-child
+            margin-right: 10px
+        &:focus
+            outline: none
+            border: 1px solid $btn-color
+    &__button
+        font-size: 16px
+        width: 100%
+        height: 70px
+        +bold
+        margin-bottom: 30px
+    &__text
+        max-width: 495px
+        display: flex
+        justify-content: space-between
+        &_first
+            max-width: 225px
+            font-size: 15px
+            line-height: 24px
+        &_second
+            display: flex
+            flex-direction: column
+            font-size: 15px
+            line-height: 24px
+            a
+                text-decoration: none
+                color: $text-color
+                +bold
+
+@media (max-width: 1200px)
+    .offer
+        background: #ffffff
+        &-block
+            width: 100%
+            padding-right: 0
+        &__input
+            width: 100%
+
+@media (max-width: 768px)
+    .offer
+        background: #ffffff
+        &-block
+            width: 100%
+            padding-right: 0
+        &__title
+            font-size: 18px
+            line-height: 1.4
+        &__subtitle
+            font-size: 14px
+            margin-top: 20px
+            margin-bottom: 27px
+        &__input
+            width: 100%
+            margin-bottom: 8px
+        &__button
+            font-size: 14px
+            padding: 19px 64px
+            line-height: 16px
+        &__text
+            flex-direction: column
+    

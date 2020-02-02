@@ -1,3 +1,6 @@
+*
+    box-sizing: border-box
+    
 body
     +reg
     color: $text-color
@@ -18,3 +21,11 @@ img
     border: none
     border-radius: 10px
     background-color: $btn-color
+    &:hover
+        background-color: lighten($btn-color, 10%)
+        cursor: pointer
+    &:focus
+        outline: none
+
+section
+    padding: 80px 0
