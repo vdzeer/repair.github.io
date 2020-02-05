@@ -1,9 +1,10 @@
 $(document).ready(function(){
     $('.slider').slick({
+        infinite: true,
         slidesToShow: 3,
         slidesToScroll: 1,
-        prevArrow: $('.arrow__left'),
-        nextArrow: $('.arrow__right'),
+        prevArrow: $('.arrows__left'),
+        nextArrow: $('.arrows__right'),
         responsive: [
             {
             breakpoint: 1200,
