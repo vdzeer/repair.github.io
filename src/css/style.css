@@ -228,6 +228,20 @@ section {
   .hero-list {
     margin-bottom: 38px;
   }
+  .hero-text {
+    margin-right: 0;
+  }
+  .hero-text__title {
+    text-align: center;
+  }
+  .hero-text__subtitle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 @media (max-width: 768px) {
