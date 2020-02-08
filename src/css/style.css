@@ -474,6 +474,139 @@ section {
   }
 }
 
+.price {
+  text-align: center;
+}
+
+.price__title {
+  margin: auto;
+  font-size: 30px;
+  line-height: 45px;
+  max-width: 515px;
+  font-family: 'Museo Sans Bold';
+  font-weight: 700;
+}
+
+.price__subtitle {
+  display: inline-block;
+  font-size: 20px;
+  margin: 59px 0;
+  font-family: 'Museo Sans Light';
+  font-weight: 300;
+}
+
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.cards {
+  margin-bottom: 30px;
+  text-align: center;
+  border: 1px solid #e8e8e8;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.cards:hover {
+  -webkit-box-shadow: 0 20px 25px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 20px 25px rgba(0, 0, 0, 0.1);
+}
+
+.card__title {
+  display: block;
+  font-size: 18px;
+  margin: 39px 0 31px 0;
+  font-family: 'Museo Sans Bold';
+  font-weight: 700;
+}
+
+.card__img {
+  position: relative;
+}
+
+.card__img img {
+  display: block;
+}
+
+.card__img:hover::before {
+  opacity: 0.8;
+}
+
+.card__img::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#ffd200), to(rgba(255, 255, 255, 0)));
+  background-image: linear-gradient(to top, #ffd200 0%, rgba(255, 255, 255, 0) 100%);
+  opacity: 0;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.card__link {
+  display: inline-block;
+  position: relative;
+  margin-bottom: 47px;
+  font-size: 16px;
+  color: #333333;
+  text-decoration: none;
+  font-family: 'Museo Sans Bold';
+  font-weight: 700;
+}
+
+.card__link:hover::before {
+  height: 12px;
+}
+
+.card__link::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  left: 0;
+  bottom: -4px;
+  z-index: -1;
+  background-color: #ffd200;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+@media (max-width: 1200px) {
+  .price__title {
+    font-size: 18px;
+    line-height: 1.4;
+  }
+  .price__subtitle {
+    font-size: 14px;
+    margin: 27px 0 61px 0;
+  }
+  .card__title {
+    font-size: 14px;
+    margin: 30px 0 15px 0;
+  }
+  .card__link {
+    margin-bottom: 35px;
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 .modal {
   position: fixed;
   top: 0;
