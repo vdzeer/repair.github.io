@@ -753,6 +753,38 @@ section {
   }
 }
 
+.proffer {
+  background-color: #ffd200;
+  padding: 100px 0;
+}
+
+.proffer-block {
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.proffer__title {
+  font-size: 32px;
+  line-height: 50px;
+  max-width: 910px;
+  font-family: 'Museo Sans Light';
+  font-weight: 300;
+}
+
+@media (max-width: 1200px) {
+  .proffer {
+    padding: 75px 0;
+  }
+  .proffer__title {
+    font-size: 18px;
+    line-height: 1.4;
+    max-width: 258px;
+    display: inline-block;
+  }
+}
+
 .modal {
   position: fixed;
   top: 0;
