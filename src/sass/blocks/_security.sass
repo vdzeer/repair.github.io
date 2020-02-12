@@ -1,0 +1,83 @@
+.security
+    &-top
+        margin-top: 100px
+        margin-bottom: 140px
+        display: flex
+        justify-content: space-between
+        &-block
+            width: 370px
+            height: 410px
+            background-color: $security-top
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+        &__img
+            bottom: 0
+            left: 0
+        &__text
+            margin-left: 27px
+            margin-top: 27px
+            max-width: 290px
+            font-size: 16px
+            line-height: 23px
+            +reg
+    &-block
+        text-align: center
+    &__title
+        margin: auto
+        margin-bottom: 100px
+        max-width: 645px
+        font-size: 30px
+        line-height: 45px
+        +bold
+    &-list
+        display: flex
+        justify-content: space-around
+        align-items: start
+        &-item
+            display: flex
+            flex-direction: column
+            justify-content: center
+        &__img
+            height: 360px
+            border: 20px solid $hero-bg
+            margin-bottom: 40px
+        &__description
+            font-size: 18px
+            line-height: 24px
+            max-width: 290px
+            +reg
+.bold
+    +bold
+
+@media (max-width: 1200px)
+    .security
+        &-top
+            margin-top: 60px
+            margin-bottom: 75px
+            flex-direction: column
+            &-block
+                margin: auto
+                width: 275px
+                height: 310px
+                margin-bottom: 30px
+
+            &__text
+                margin-top: 20px
+                font-size: 12px
+                line-height: 17px
+        &__title
+            margin-bottom: 50px
+            font-size: 18px
+            line-height: 1.4
+        &-list
+            justify-content: center
+            flex-direction: column
+            &-item
+                margin: auto
+            &__img
+                margin-bottom: 31px
+            &__description
+                font-size: 14px
+                line-height: 1.4
+                margin-bottom: 45px
