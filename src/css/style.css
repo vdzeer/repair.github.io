@@ -1106,6 +1106,144 @@ section {
   }
 }
 
+.footer {
+  position: relative;
+}
+
+.footer__bold {
+  font-family: 'Museo Sans Bold';
+  font-weight: 700;
+}
+
+.map {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 50%;
+}
+
+.contacts-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.contacts {
+  width: 50%;
+  padding-top: 100px;
+  padding-left: 215px;
+}
+
+.contacts-title {
+  max-width: 300px;
+  font-family: 'Museo Sans Bold';
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 33px;
+}
+
+.contacts-list {
+  list-style: none;
+  margin-top: 100px;
+  padding: 0;
+}
+
+.contacts-list__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-bottom: 40px;
+}
+
+.contacts-list__icon {
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  margin-right: 25px;
+}
+
+.contacts-list__text {
+  line-height: 26px;
+  font-family: 'Museo Sans Light';
+  font-weight: 300;
+  max-width: 140px;
+}
+
+.contacts-list__tel {
+  color: #333333;
+  text-decoration: none;
+  font-family: 'Museo Sans Bold';
+  font-weight: 700;
+}
+
+@media (max-width: 1200px) {
+  .map {
+    margin-top: 580px;
+    bottom: 0;
+    width: 100%;
+  }
+  .contacts-block {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .contacts {
+    width: 100%;
+    padding: 0;
+    padding-top: 100px;
+  }
+  .contacts-title {
+    text-align: center;
+    max-width: 700px;
+  }
+  .contacts-list {
+    margin-top: 100px;
+    padding: 0;
+    margin-left: 30%;
+  }
+}
+
+@media (max-width: 768px) {
+  .map {
+    margin-top: 540px;
+  }
+  .contacts {
+    padding-top: 65px;
+  }
+  .contacts-title {
+    max-width: 250px;
+    font-size: 18px;
+    line-height: 1.4;
+  }
+  .contacts-list {
+    margin-top: 40px;
+    padding: 0;
+    margin-left: 25px;
+  }
+  .contacts-list__icon {
+    margin-right: 15px;
+  }
+  .contacts-list__text {
+    line-height: 26px;
+    font-size: 16px;
+    max-width: 145px;
+  }
+  .contacts-list__tel {
+    font-size: 16px;
+  }
+}
+
 .modal {
   position: fixed;
   top: 0;
